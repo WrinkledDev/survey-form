@@ -1,0 +1,176 @@
+/* GENERAL SETTINGS */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
+#main {
+  padding: 50px 10px 30px 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.background-image {
+  background-image: url(img/flowers.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* CONTAINER */
+
+#container {
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 40px 20px 40px;
+  background-color: #fff;
+  opacity: 0.85;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+
+/* SURVEY INTRODUCTION */
+
+#title {
+  padding: 10px;
+}
+
+#description {
+  padding: 10px;
+  text-align: justify;
+}
+
+/* SURVEY AREA */
+
+legend {
+  font-size: 1.5em;
+}
+
+#survey-demographics,
+#survey-assessment {
+  width: 75vw;
+  padding: 10px 0px 20px 20px;
+  margin: 25px 0px 25px 0px;
+  border-radius: 15px;
+}
+
+#survey-assessment {
+  margin-top: 20px;
+}
+
+.demo-info,
+.assessment-info {
+  padding: 5px 0px 5px 0px;
+}
+
+.demo-labels,
+.assessment-labels {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+input,
+select {
+  width: 95%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  font-size: 1.2em;
+}
+
+.pass-holder {
+  font-size: 1.2em;
+}
+
+#radio-button-intro,
+#checkbox-button-intro {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.radio-buttons,
+.checkboxes {
+  text-align: left;
+}
+
+/* #radio-buttons-div,
+#checkbox-buttons-div {
+  margin: 0px 100px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+} */
+
+.radio-button-options,
+.checkbox-button-options {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.radio-button-options input,
+.checkbox-button-options input {
+  width: 40%;
+  text-align: left;
+}
+
+.visited-with {
+  font-size: 1.2em;
+}
+
+#feedback-title {
+  font-size: 1.2em;
+  margin: 10px 0px;
+}
+
+#feedback-box {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#textarea {
+  padding: 10px 0px 0px 10px;
+  font-size: 1.2em;
+  width: 95%;
+}
+
+#submit {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+#submit:hover {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#thank-you {
+  margin: 20px 0px 10px 0px;
+  text-align: center;
+}
