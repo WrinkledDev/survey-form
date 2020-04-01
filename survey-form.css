@@ -150,6 +150,7 @@ select {
 #textarea {
   padding: 10px 0px 0px 10px;
   font-size: 1.2em;
+  width: 95%;
 }
 
 #submit {
