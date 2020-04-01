@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="survey-form.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UABG - Guest Experience Survey</title>
+  </head>
+  <body>
+    <div id="main" class="background-image">
+      <div id="container">
+        <header id="survey-introduction">
+          <h1 id="title">UABG - Guest Experience Survey</h1>
+          <p id="description">
+            Thank you for visiting the University of Alberta Botanic Garden
+            (Garden). We're always looking for ways to improve the Garden
+            experience, so we'd love to hear what's working (and not) and how we
+            can do better. <br /><br />
+            To that end, we'd like to ask you a few questions about your
+            experience so far. It'll only take 3 minutes, and your answers will
+            help us make the University of Alberta Botanic Garden even better
+            for you and other guests.
+          </p>
+        </header>
+        <section id="survey-area">
+          <form id="survey-form">
+            <fieldset id="survey-demographics">
+              <legend>Tell us about yourself</legend>
+              <!-- NAME -->
+              <div class="demo-info">
+                <label for="name" class="demo-labels" id="name-label"
+                  >Name:</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <!-- EMAIL -->
+              <div class="demo-info">
+                <label for="email" class="demo-labels" id="email-label"
+                  >Email:</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@doe.com"
+                  required
+                />
+              </div>
+              <!-- AGE -->
+              <div class="demo-info">
+                <label for="number" class="demo-labels" id="number-label"
+                  >Age:</label
+                >
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  placeholder="99"
+                  min="0"
+                  max="200"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset id="survey-assessment">
+              <legend>Tell us about your visit</legend>
+              <!-- DROPDOWN -->
+              <div class="assessment-info">
+                <label for="dropdown" class="assessment-labels"
+                  >Favourite Garden:</label
+                >
+                <select name="favourite-garden" id="dropdown" required>
+                  <option value="" disabled selected hidden
+                    >My Favourite spot at the Garden is...</option
+                  >
+                  <option value="Aga Khan Garden">Aga Khan Garden</option>
+                  <option value="Indigenous Garden">Indigenous Garden</option>
+                  <option value="Showhouses">Showhouses</option>
+                  <option value="Kurimoto Japanese Garden"
+                    >Kurimoto Japanese Garden</option
+                  >
+                  <option value="Patrick Seymour Alpine Garden"
+                    >Patrick Seymour Alpine Garden</option
+                  >
+                </select>
+              </div>
+              <!-- RADIO BUTTONS -->
+              <p id="radio-button-intro">Am I a season pass-holder?</p>
+              <div class="assessment-info" id="radio-buttons-div">
+                <div class="radio-button-options">
+                  <label for="season-pass-holder" class="pass-holder"
+                    >Yes</label
+                  >
+                  <input
+                    type="radio"
+                    id="season-pass-holder"
+                    class="radio-buttons"
+                    name="membership-status"
+                    value="season-pass-holder"
+                    required
+                  />
+                </div>
+                <div class="radio-button-options">
+                  <label for="non-season-pass-holder" class="pass-holder"
+                    >No</label
+                  >
+                  <input
+                    type="radio"
+                    id="non-season-pass-holder"
+                    class="radio-buttons"
+                    name="membership-status"
+                    value="non-season-pass-holder"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- CHECKBOXES -->
+              <p id="checkbox-button-intro">I visited the Garden with...</p>
+              <div class="assessment-info" id="checkbox-buttons-div">
+                <div class="checkbox-button-options">
+                  <label for="friends" class="visited-with">Friends</label>
+                  <input
+                    type="checkbox"
+                    class="checkboxes"
+                    name="visited-with"
+                    id="friends"
+                    value="friends"
+                    required
+                  />
+                </div>
+                <div class="checkbox-button-options">
+                  <label for="family" class="visited-with">Family</label>
+                  <input
+                    type="checkbox"
+                    class="checkboxes"
+                    name="visited-with"
+                    id="family"
+                    value="family"
+                    required
+                  />
+                </div>
+                <div class="checkbox-button-options">
+                  <label for="friends" class="visited-with">Pet</label>
+                  <input
+                    type="checkbox"
+                    class="checkboxes"
+                    name="visited-with"
+                    id="pet"
+                    value="pet"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- TEXTAREA -->
+              <div class="assessment-info" id="feedback-box">
+                <label for="textarea" id="feedback-title"
+                  >I'd like to say:</label
+                >
+                <textarea
+                  name="comments"
+                  id="textarea"
+                  cols="30"
+                  rows="10"
+                  placeholder="Your feedback is welcome!"
+                ></textarea>
+              </div>
+            </fieldset>
+            <div id="submit-button">
+              <button id="submit">Share my Feedback</button>
+            </div>
+          </form>
+        </section>
+
+        <div id="thank-you">
+          <p>Thank you for taking the time to provide valuable feedback!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+DONE - User Story #1: I can see a title with id="title" in H1 sized text.
+
+DONE - User Story #2: I can see a short explanation with id="description" in P sized text.
+
+DONE - User Story #3: I can see a form with id="survey-form".
+
+DONE - User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
+
+DONE - User Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+
+DONE - User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+
+DONE - User Story #7: Inside the form, I can enter a number in a field with id="number".
+
+DONE - User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+DONE - User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+DONE - User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+DONE - User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+DONE - User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+
+DONE - User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+DONE - User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+DONE - User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
+DONE - User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
+
+ -->
